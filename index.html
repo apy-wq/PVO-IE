@@ -1019,18 +1019,15 @@
             color: #22c55e;
         }
 
-        /* Location cards in form */
+        /* Location info */
         .location-options {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
         }
 
         .location-card {
-            background: white;
-            border: 1px solid var(--gray-200);
-            border-radius: 8px;
-            padding: 1rem;
             text-align: center;
         }
 
@@ -1038,19 +1035,11 @@
             display: block;
             color: var(--dark);
             font-size: 1rem;
-            margin-bottom: 0.25rem;
         }
 
         .location-card span {
-            display: block;
             font-size: 0.8rem;
             color: var(--gray-500);
-        }
-
-        .location-card .sessions {
-            font-size: 0.75rem;
-            color: var(--primary-orange);
-            margin-top: 0.25rem;
         }
 
         #main-cta-button {
