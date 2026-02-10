@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opleiding Industrial Engineering | Word Gecertificeerd Procesverbeteraar | PVO</title>
+    <meta name="description" content="Praktijkgerichte opleiding Industrial Engineering. Leer Lean Manufacturing, tijdstudie en procesoptimalisatie. Start 23 februari 2026. Schrijf nu in!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #d06626;
+            --primary-orange-hover: #b85720;
+            --dark: #1d1d1b;
+            --white: #ffffff;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-500: #6b7280;
+            --gray-600: #4b5563;
+            --gray-700: #374151;
+            --gray-900: #111827;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--white);
+        }
+
+        /* Sticky Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo svg {
+            height: 32px;
+            width: auto;
+        }
+
+        .header-cta {
+            background: var(--primary-orange);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: background 0.2s;
+        }
+
+        .header-cta:hover {
+            background: var(--primary-orange-hover);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%23d06626' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E") repeat;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(208, 102, 38, 0.1);
+            color: var(--primary-orange);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.15;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary-orange);
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--gray-700);
+        }
+
+        .hero-feature svg {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-orange);
+            flex-shrink: 0;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-orange);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-orange-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(208, 102, 38, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--gray-200);
+            transition: all 0.2s;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary-orange);
+            color: var(--primary-orange);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+
+        .hero-stats {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 2rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        /* Urgency Banner */
+        .urgency-banner {
+            background: var(--dark);
+            color: var(--white);
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        .urgency-banner p {
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        .urgency-banner svg {
+            display: inline;
+            vertical-align: middle;
+            margin-right: 0.35rem;
+        }
+
+        .urgency-banner strong {
+            color: var(--primary-orange);
+        }
+
+        .urgency-mobile {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .urgency-desktop {
+                display: none;
+            }
+
+            .urgency-mobile {
+                display: block;
+            }
+
+            .urgency-label {
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                opacity: 0.7;
+                margin-bottom: 0.5rem;
+            }
+
+            .urgency-dates {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.75rem;
+            }
+
+            .urgency-date {
+                background: rgba(255,255,255,0.1);
+                padding: 0.5rem 1rem;
+                border-radius: 8px;
+            }
+
+            .urgency-date strong {
+                display: block;
+                font-size: 1rem;
+                color: var(--primary-orange);
+            }
+
+            .urgency-date span {
+                font-size: 0.8rem;
+                opacity: 0.8;
+            }
+
+            .urgency-sep {
+                font-size: 0.8rem;
+                opacity: 0.6;
+            }
+
+            .urgency-note {
+                margin-top: 0.5rem;
+                font-size: 0.75rem;
+                opacity: 0.6;
+            }
+        }
+
+        /* Trusted By Section */
+        .trusted {
+            padding: 2.5rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        .trusted-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .trusted-label {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.25rem;
+        }
+
+        .trusted-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem 2.5rem;
+            opacity: 0.6;
+        }
+
+        .trusted-logo {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gray-700);
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: rgba(208, 102, 38, 0.1);
+            color: var(--primary-orange);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: var(--gray-600);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            background: var(--gray-50);
+            padding: 2rem;
+            border-radius: 16px;
+            transition: all 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        .benefit-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-orange);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .benefit-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--white);
+        }
+
+        .benefit-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+        }
+
+        .benefit-card p {
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+
+        /* What You Learn */
+        .curriculum {
+            padding: 5rem 2rem;
+            background: var(--gray-50);
+        }
+
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .curriculum-list {
+            list-style: none;
+        }
+
+        .curriculum-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .curriculum-item:last-child {
+            border-bottom: none;
+        }
+
+        .curriculum-check {
+            width: 24px;
+            height: 24px;
+            background: var(--primary-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .curriculum-check svg {
+            width: 14px;
+            height: 14px;
+            color: var(--white);
+        }
+
+        .curriculum-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .curriculum-item p {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        .curriculum-image {
+            position: relative;
+        }
+
+        .curriculum-image img {
+            width: 100%;
+            border-radius: 16px;
+        }
+
+        .certificate-badge {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            background: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .certificate-badge svg {
+            width: 40px;
+            height: 40px;
+            color: var(--primary-orange);
+        }
+
+        .certificate-text {
+            font-size: 0.875rem;
+        }
+
+        .certificate-text strong {
+            display: block;
+            color: var(--dark);
+        }
+
+        .certificate-text span {
+            color: var(--gray-500);
+            font-size: 0.75rem;
+        }
+
+        /* Testimonial Section */
+        .testimonial {
+            padding: 5rem 2rem;
+            background: var(--dark);
+            color: var(--white);
+        }
+
+        .testimonial-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-content {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .testimonial-video {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+        }
+
+        @media (max-width: 1024px) {
+            .testimonial-video {
+                aspect-ratio: 16/9;
+            }
+        }
+
+        .testimonial-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-thumbnail {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 0.2s;
+        }
+
+        .video-thumbnail:hover .play-button {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .testimonial-text {
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 0.875rem;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--primary-orange);
+            line-height: 0;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .author-info strong {
+            display: block;
+            font-size: 1rem;
+        }
+
+        .author-info span {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+        }
+
+        /* Approach Section */
+        .approach {
+            padding: 5rem 2rem;
+            background: var(--white);
+        }
+
+        .approach-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .approach-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            background: var(--primary-orange);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin: 0 auto 1rem;
+        }
+
+        .step-content h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .approach-steps {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .approach-step {
+                display: flex;
+                text-align: left;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+
+            .step-number {
+                margin: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        /* For Who Section */
+        .for-who {
+            padding: 4rem 2rem;
+            background: var(--white);
+        }
+
+        .for-who-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .for-who-tag {
+            background: var(--gray-50);
+            border: 1px solid var(--gray-200);
+            padding: 0.6rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+
+        /* References Section */
+        .references {
+            padding: 4rem 2rem;
+            background: var(--gray-50);
+        }
+
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .reference-category {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .reference-category h4 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .reference-logos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .reference-logos span {
+            background: var(--gray-50);
+            padding: 0.4rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--gray-700);
+            font-weight: 500;
+        }
+
+        .references-note {
+            text-align: center;
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+
+        .references-note a {
+            color: var(--primary-orange);
+            font-weight: 500;
+        }
+
+        /* CTA / Form Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--primary-orange) 0%, #e07836 100%);
+            color: var(--white);
+        }
+
+        .cta-container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.125rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .form-subtitle {
+            color: var(--gray-500);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-checkbox input {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            accent-color: var(--primary-orange);
+        }
+
+        .form-checkbox label {
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            line-height: 1.5;
+        }
+
+        .form-checkbox a {
+            color: var(--primary-orange);
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--primary-orange);
+            color: var(--white);
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .form-submit:hover {
+            background: var(--primary-orange-hover);
+            transform: translateY(-2px);
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        .form-note svg {
+            width: 16px;
+            height: 16px;
+            display: inline;
+            vertical-align: middle;
+            margin-right: 0.25rem;
+        }
+
+        /* Primary CTA Box */
+        .primary-cta-box {
+            position: relative;
+            background: linear-gradient(135deg, rgba(208, 102, 38, 0.05) 0%, rgba(208, 102, 38, 0.02) 100%);
+            border: 2px solid var(--primary-orange);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-orange);
+            color: white;
+            padding: 0.35rem 1rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .primary-cta-box .form-title {
+            margin-top: 0.5rem;
+        }
+
+        .price-highlight {
+            background: var(--white);
+            border: 2px solid var(--primary-orange);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-amount {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+        }
+
+        .price-details {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        .subsidy-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .subsidy-info p {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin: 0;
+        }
+
+        .subsidy-info svg {
+            color: #22c55e;
+        }
+
+        /* Location cards in form */
+        .location-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .location-card {
+            background: white;
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .location-card strong {
+            display: block;
+            color: var(--dark);
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .location-card span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gray-500);
+        }
+
+        .location-card .sessions {
+            font-size: 0.75rem;
+            color: var(--primary-orange);
+            margin-top: 0.25rem;
+        }
+
+        #main-cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            font-size: 1.125rem;
+            padding: 1.15rem 2rem;
+        }
+
+        #main-cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(208, 102, 38, 0.4);
+        }
+
+        /* Divider */
+        .form-divider {
+            display: flex;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .form-divider::before,
+        .form-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--gray-200);
+        }
+
+        .form-divider span {
+            padding: 0 1rem;
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+
+        /* Secondary CTA Box */
+        .secondary-cta-box {
+            background: var(--gray-50);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .secondary-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .secondary-subtitle {
+            font-size: 0.875rem;
+            color: var(--gray-500);
+            margin-bottom: 1.25rem;
+        }
+
+        .secondary-submit {
+            background: var(--gray-700);
+        }
+
+        .secondary-submit:hover {
+            background: var(--dark);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 2rem 1.5rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-logo svg {
+            height: 32px;
+        }
+
+        .footer-logo svg path {
+            fill: var(--white);
+        }
+
+        .footer-logo svg path:first-child {
+            fill: var(--primary-orange);
+        }
+
+        .footer-contact {
+            text-align: right;
+        }
+
+        .footer-contact p {
+            margin-bottom: 0.5rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .footer-contact a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            color: var(--primary-orange);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .footer-badges {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .footer-badge {
+            font-size: 0.75rem;
+            padding: 0.5rem 0.75rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                margin: 0 auto 2rem;
+            }
+
+            .hero-features {
+                align-items: center;
+            }
+
+            .hero-cta-group {
+                justify-content: center;
+            }
+
+            .hero-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            .hero-stats {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .curriculum-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-content {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .header-cta {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .benefits,
+            .curriculum,
+            .approach,
+            .for-who,
+            .references {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+
+            .testimonial-quote {
+                font-size: 0.8rem;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            .testimonial-quote::before {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .section-header {
+                margin-bottom: 1.5rem;
+            }
+
+            .benefits,
+            .curriculum,
+            .approach {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .for-who,
+            .references {
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+
+            .benefits-grid {
+                gap: 1rem;
+            }
+
+            .benefit-card {
+                padding: 1.25rem;
+                border-radius: 12px;
+            }
+
+            .benefit-icon {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 0.75rem;
+            }
+
+            .benefit-card h3 {
+                font-size: 1rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .benefit-card p {
+                font-size: 0.875rem;
+            }
+
+            .references-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .reference-category {
+                padding: 1rem;
+            }
+
+            .reference-category h4 {
+                margin-bottom: 0.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .location-options {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                padding: 3rem 0.75rem;
+            }
+
+            .cta-title {
+                font-size: 1.5rem;
+            }
+
+            .cta-subtitle {
+                font-size: 1rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .form-container {
+                padding: 1.25rem;
+                border-radius: 14px;
+            }
+
+            .primary-cta-box {
+                padding: 1.25rem;
+                border-radius: 12px;
+                margin-bottom: 1rem;
+            }
+
+            .primary-cta-box .form-title {
+                font-size: 1.125rem;
+            }
+
+            .price-highlight {
+                padding: 0.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .price-amount {
+                font-size: 1.5rem;
+            }
+
+            .price-details {
+                font-size: 0.8rem;
+            }
+
+            .location-card {
+                padding: 0.75rem;
+            }
+
+            .location-card strong {
+                font-size: 1rem;
+            }
+
+            #main-cta-button {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .subsidy-info {
+                gap: 0.5rem;
+                margin-top: 0.75rem;
+                padding-top: 0.75rem;
+            }
+
+            .subsidy-info p {
+                font-size: 0.8rem;
+            }
+
+            .form-divider {
+                margin: 1.25rem 0;
+            }
+
+            .secondary-cta-box {
+                padding: 1rem;
+            }
+
+            .form-group {
+                margin-bottom: 1rem;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 0.75rem 0.85rem;
+                font-size: 0.875rem;
+            }
+
+            .form-checkbox {
+                margin-bottom: 1rem;
+            }
+
+            .footer-main {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-contact {
+                text-align: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <a href="https://www.pvo.be" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.78 40.83">
+                <path d="M90.46,5.93,89.7,5l-3,4.4.33.47a10.44,10.44,0,1,1-8.78-4.78,9.79,9.79,0,0,1,2.1.22l.9.21,3-4.43L82.94.68A17.08,17.08,0,0,0,78.26,0,15.51,15.51,0,1,0,93.78,15.51,15.33,15.33,0,0,0,90.46,5.93Z" fill="#d06626"/>
+                <polygon points="38.35 0.91 46.9 22.97 55.37 0.91 61.09 0.91 49.56 30.23 44.25 30.23 32.69 0.91 38.35 0.91" fill="#1d1d1b"/>
+                <path d="M0,15.52A15.48,15.48,0,1,1,10.06,30.05l-.47-.16V24.22l1.16.59A10.21,10.21,0,0,0,15.51,26,10.45,10.45,0,1,0,5.07,15.52V40.83H0V15.52" fill="#1d1d1b"/>
+            </svg>
+        </a>
+        <a href="#inschrijven" class="header-cta">Nu inschrijven</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Erkende opleiding met getuigschrift</span>
+                <h1>Word gecertificeerd <span>Industrial Engineer</span></h1>
+                <p class="hero-subtitle">Leer processen optimaliseren met Lean Manufacturing, tijdstudie en bewezen verbetermethodes. Praktijkgericht en direct toepasbaar.</p>
+
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>26 sessies met ervaren consultants</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>Praktijkdagen en eigen verbeterproject</span>
+                    </div>
+                    <div class="hero-feature">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        <span>KMO-portefeuille & subsidies mogelijk</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#inschrijven" class="btn-primary">
+                        Schrijf je nu in
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                    <a href="#programma" class="btn-secondary">Bekijk programma</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="Industrial Engineering opleiding">
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">26</div>
+                        <div class="stat-label">Sessies</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Afgestudeerden</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        <p class="urgency-desktop">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Volgende startdatum: <strong>23 februari 2026 (Gent)</strong> of <strong>27 februari 2026 (Kortrijk)</strong> — Beperkt aantal plaatsen
+        </p>
+        <div class="urgency-mobile">
+            <div class="urgency-label">Volgende startdata</div>
+            <div class="urgency-dates">
+                <div class="urgency-date"><strong>23 feb 2026</strong><span>Gent</span></div>
+                <div class="urgency-sep">of</div>
+                <div class="urgency-date"><strong>27 feb 2026</strong><span>Kortrijk</span></div>
+            </div>
+            <div class="urgency-note">Beperkt aantal plaatsen</div>
+        </div>
+    </div>
+
+    <!-- Trusted By Section -->
+    <section class="trusted">
+        <div class="trusted-container">
+            <p class="trusted-label">Medewerkers van deze bedrijven volgden onze opleidingen</p>
+            <div class="trusted-logos">
+                <span class="trusted-logo">Colruyt</span>
+                <span class="trusted-logo">Volvo</span>
+                <span class="trusted-logo">Bekaert</span>
+                <span class="trusted-logo">Atlas Copco</span>
+                <span class="trusted-logo">Nike</span>
+                <span class="trusted-logo">Picanol</span>
+                <span class="trusted-logo">Samsonite</span>
+                <span class="trusted-logo">Mondelez</span>
+                <span class="trusted-logo">B Post</span>
+                <span class="trusted-logo">Cargill</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Waarom deze opleiding?</span>
+                <h2 class="section-title">Ontwikkel vaardigheden die direct impact hebben</h2>
+                <p class="section-subtitle">Onze deelnemers behalen gemiddeld 15-30% productiviteitsverbetering in hun eerste project.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3>Hogere productiviteit</h3>
+                    <p>Leer verspillingen identificeren en elimineren met Lean Manufacturing en Value Stream Mapping.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>Kortere doorlooptijden</h3>
+                    <p>Optimaliseer je processen met tijdstudie, normstelling en lijnbalancering.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3>Erkend getuigschrift</h3>
+                    <p>Behaal na een theoretische en praktische proef je officieel getuigschrift Industrial Engineer.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                    </div>
+                    <h3>Praktijkgericht leren</h3>
+                    <p>Ervaren consultants, praktijkcases, bedrijfsbezoeken en een eigen verbeterproject in je organisatie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Learn -->
+    <section id="programma" class="curriculum">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Wat leer je?</span>
+                <h2 class="section-title">Bouw een complete toolkit op</h2>
+                <p class="section-subtitle">Van theorie naar praktijk: alles wat je nodig hebt om processen te optimaliseren.</p>
+            </div>
+
+            <div class="curriculum-grid">
+                <ul class="curriculum-list">
+                    <li class="curriculum-item">
+                        <div class="curriculum-check">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <h4>Lean Manufacturing & Value Stream Mapping</h4>
+                            <p>Breng waardestromen in kaart en elimineer verspillingen systematisch.</p>
+                        </div>
+                    </li>
+                    <li class="curriculum-item">
+                        <div class="curriculum-check">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <h4>Tijdstudie en normstelling</h4>
+                            <p>Voer zelf professionele tijdstudies uit en stel realistische normen.</p>
+                        </div>
+                    </li>
+                    <li class="curriculum-item">
+                        <div class="curriculum-check">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <h4>Ergonomie en werkpoststudie</h4>
+                            <p>Ontwerp werkposten die efficiënt én ergonomisch verantwoord zijn.</p>
+                        </div>
+                    </li>
+                    <li class="curriculum-item">
+                        <div class="curriculum-check">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <h4>Lijnbalancering</h4>
+                            <p>Optimaliseer de verdeling van werk over stations voor maximale flow.</p>
+                        </div>
+                    </li>
+                    <li class="curriculum-item">
+                        <div class="curriculum-check">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <h4>5S, SMED & OEE</h4>
+                            <p>Praktische tools voor orde, snelle omstelling en effectiviteitsmeting.</p>
+                        </div>
+                    </li>
+                    <li class="curriculum-item">
+                        <div class="curriculum-check">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <div>
+                            <h4>Change Management & Leadership</h4>
+                            <p>Leer hoe je verbeteringen duurzaam implementeert in je organisatie.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="curriculum-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=600&fit=crop" alt="Team werkt aan procesverbetering">
+                    <div class="certificate-badge">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                        <div class="certificate-text">
+                            <strong>Getuigschrift</strong>
+                            <span>Industrial Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA after curriculum -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#inschrijven" class="btn-primary">
+                    Bekijk inschrijfopties
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Hoe pakken we het aan?</span>
+                <h2 class="section-title">Een opleiding die je meteen toepast</h2>
+            </div>
+
+            <div class="approach-steps">
+                <div class="approach-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Klassikale sessies</h3>
+                        <p>26 sessies met ervaren consultants die deze tools dagelijks toepassen. Theorie wordt direct gekoppeld aan praktijkcases en video-analyses.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Praktijkdagen & bedrijfsbezoeken</h3>
+                        <p>2 praktijkdagen op de werkvloer. Je leert door te doen, niet alleen door te luisteren.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Verbeterproject in eigen bedrijf</h3>
+                        <p>Je past het geleerde direct toe in je eigen organisatie. Zo lever je al tijdens de opleiding meetbare resultaten.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Getuigschrift Industrial Engineer</h3>
+                        <p>Na een theoretische en praktische proef ontvang je je officieel getuigschrift.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="testimonial-container">
+            <div class="section-header" style="color: white;">
+                <span class="section-label" style="background: rgba(255,255,255,0.1);">Wat deelnemers zeggen</span>
+                <h2 class="section-title" style="color: white;">Bekijk de getuigenis van Colruyt Group</h2>
+            </div>
+
+            <div class="testimonial-content">
+                <div class="testimonial-video" id="video-container">
+                    <a href="https://www.youtube.com/watch?v=gUx4eTIKudc" target="_blank" rel="noopener" class="video-thumbnail" id="video-thumb">
+                        <img src="https://img.youtube.com/vi/gUx4eTIKudc/hqdefault.jpg" alt="Bekijk getuigenis Colruyt Group" loading="lazy">
+                        <div class="play-button">
+                            <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="testimonial-text">
+                    <p class="testimonial-quote">
+                        Vanaf het begin is het duidelijk dat de docenten met passie, kennis en ervaring de materie overbrengen en de opleiding zoveel mogelijk vullen met praktijkvoorbeelden. De opleiding is doordacht opgebouwd, waardoor we onszelf stapsgewijs steeds meer specialist mochten noemen. Bovendien is er voldoende ruimte om in dialoog te gaan over eigen voorbeelden. Het is een praktische aanpak voor mensen die binnen hun bedrijf zelf aan Lean en procesverbetering willen werken, met resultaat. Onze klanten noemen dit de meest praktijkgerichte opleiding uit de streek.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TB</div>
+                        <div class="author-info">
+                            <strong>Thomas Brockmans</strong>
+                            <span>Colruyt Group</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA after testimonial -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#inschrijven" class="btn-primary" style="background: white; color: #d06626;">
+                    Schrijf je nu in
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Who Section (compact) -->
+    <section class="for-who">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Voor wie?</span>
+                <h2 class="section-title">Is deze opleiding iets voor jou?</h2>
+            </div>
+
+            <div class="for-who-tags">
+                <span class="for-who-tag">Productieverantwoordelijken</span>
+                <span class="for-who-tag">Plant Managers</span>
+                <span class="for-who-tag">Process Engineers</span>
+                <span class="for-who-tag">Lean-verantwoordelijken</span>
+                <span class="for-who-tag">Operations Managers</span>
+                <span class="for-who-tag">Werkvoorbereiders</span>
+                <span class="for-who-tag">Efficiency Managers</span>
+                <span class="for-who-tag">Procesverbeteraars</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- References by Sector -->
+    <section class="references">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Onze referenties</span>
+                <h2 class="section-title">50+ bedrijven gingen je voor</h2>
+            </div>
+
+            <div class="references-grid">
+                <div class="reference-category">
+                    <h4>Productie & Industrie</h4>
+                    <div class="reference-logos">
+                        <span>Bekaert</span>
+                        <span>Atlas Copco</span>
+                        <span>Picanol</span>
+                        <span>Volvo</span>
+                        <span>Bombardier</span>
+                        <span>Continental</span>
+                        <span>ON Semiconductor</span>
+                        <span>Heraeus</span>
+                        <span>Joris Ide</span>
+                        <span>Novy</span>
+                    </div>
+                </div>
+
+                <div class="reference-category">
+                    <h4>Food & Consumer Goods</h4>
+                    <div class="reference-logos">
+                        <span>Colruyt</span>
+                        <span>Mondelez</span>
+                        <span>Lotus</span>
+                        <span>Cargill</span>
+                        <span>Imperial Meat Products</span>
+                        <span>Milcobel</span>
+                        <span>Nike</span>
+                        <span>Samsonite</span>
+                        <span>Van De Velde</span>
+                    </div>
+                </div>
+
+                <div class="reference-category">
+                    <h4>Logistiek & Services</h4>
+                    <div class="reference-logos">
+                        <span>B Post</span>
+                        <span>DP World</span>
+                        <span>De Lijn</span>
+                        <span>Fujifilm</span>
+                        <span>Suez</span>
+                        <span>VOKA</span>
+                        <span>Mazda</span>
+                        <span>Deltalight</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="references-note">En 40+ andere bedrijven. <a href="https://www.pvo.be/referenties" target="_blank">Bekijk alle referenties</a></p>
+        </div>
+    </section>
+
+    <!-- CTA / Form Section -->
+    <section id="inschrijven" class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Klaar om te starten?</h2>
+            <p class="cta-subtitle">Schrijf je nu in of vraag vrijblijvend meer informatie aan.</p>
+
+            <div class="form-container">
+                <!-- Primary CTA: Direct inschrijven -->
+                <div class="primary-cta-box">
+                    <div class="cta-badge">Aanbevolen</div>
+                    <h3 class="form-title">Direct inschrijven</h3>
+
+                    <!-- Prijs prominent -->
+                    <div class="price-highlight">
+                        <span class="price-amount">€ 6.280</span>
+                        <span class="price-details">excl. BTW | 26 sessies + 2 praktijkdagen</span>
+                    </div>
+
+                    <div class="location-options" style="margin-bottom: 1.5rem;">
+                        <div class="location-card">
+                            <strong>Gent</strong>
+                            <span>Start: 23 feb 2026</span>
+                        </div>
+                        <div class="location-card">
+                            <strong>Kortrijk</strong>
+                            <span>Start: 27 feb 2026</span>
+                        </div>
+                    </div>
+
+                    <a href="https://www.amelior.be/nl/inschrijven/970" target="_blank" class="form-submit" id="main-cta-button">
+                        <span>Schrijf je nu in</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+
+                    <!-- Subsidie info -->
+                    <div class="subsidy-info">
+                        <p>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            KMO-portefeuille
+                        </p>
+                        <p>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Vlaams Opleidingsverlof
+                        </p>
+                        <p>
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Sectorfondsen
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="form-divider">
+                    <span>of</span>
+                </div>
+
+                <!-- Secondary: Meer info aanvragen -->
+                <div class="secondary-cta-box">
+                    <h4 class="secondary-title">Eerst meer informatie?</h4>
+                    <p class="secondary-subtitle">Laat je gegevens achter en we contacteren je binnen 24 uur.</p>
+
+                    <form name="info-aanvraag" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="info-form">
+                        <input type="hidden" name="form-name" value="info-aanvraag">
+                        <p style="display:none;">
+                            <label>Niet invullen: <input name="bot-field"></label>
+                        </p>
+
+                        <div class="form-group">
+                            <label for="name">Naam *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jouw volledige naam">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mailadres *</label>
+                            <input type="email" id="email" name="email" required placeholder="naam@bedrijf.be">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefoonnummer *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+32 XXX XX XX XX">
+                        </div>
+
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Ik ga akkoord met de <a href="https://www.pvo.be/privacy" target="_blank">privacyverklaring</a>. *</label>
+                        </div>
+
+                        <button type="submit" class="form-submit secondary-submit">
+                            Contacteer mij
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.78 40.83">
+                        <path d="M90.46,5.93,89.7,5l-3,4.4.33.47a10.44,10.44,0,1,1-8.78-4.78,9.79,9.79,0,0,1,2.1.22l.9.21,3-4.43L82.94.68A17.08,17.08,0,0,0,78.26,0,15.51,15.51,0,1,0,93.78,15.51,15.33,15.33,0,0,0,90.46,5.93Z" fill="#d06626"/>
+                        <polygon points="38.35 0.91 46.9 22.97 55.37 0.91 61.09 0.91 49.56 30.23 44.25 30.23 32.69 0.91 38.35 0.91" fill="#ffffff"/>
+                        <path d="M0,15.52A15.48,15.48,0,1,1,10.06,30.05l-.47-.16V24.22l1.16.59A10.21,10.21,0,0,0,15.51,26,10.45,10.45,0,1,0,5.07,15.52V40.83H0V15.52" fill="#ffffff"/>
+                    </svg>
+                </div>
+
+                <div class="footer-contact">
+                    <p>Beneluxpark 1, 8500 Kortrijk</p>
+                    <p><a href="mailto:hallo@pvo.be">hallo@pvo.be</a> | <a href="tel:+3256210098">+32 (0)56 21 00 98</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>BTW BE0448.989.541 - PVO is erkend door de Vlaamse Overheid</p>
+                <div class="footer-badges">
+                    <span class="footer-badge">KMO-portefeuille</span>
+                    <span class="footer-badge">ESF</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Video: click thumbnail to load iframe
+        document.getElementById('video-thumb').addEventListener('click', function(e) {
+            e.preventDefault();
+            const container = document.getElementById('video-container');
+            container.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/gUx4eTIKudc?autoplay=1" title="Getuigenis Colruyt Group" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"></iframe>';
+        });
+
+        // Info form submission handling for Netlify
+        document.getElementById('info-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const form = this;
+            const formData = new FormData(form);
+
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Show success message
+                    form.innerHTML = `
+                        <div style="text-align: center; padding: 2rem;">
+                            <svg width="64" height="64" fill="none" stroke="#22c55e" viewBox="0 0 24 24" style="margin: 0 auto 1rem;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <h4 style="color: #1d1d1b; margin-bottom: 0.5rem; font-size: 1.125rem;">Bedankt voor je interesse!</h4>
+                            <p style="color: #6b7280;">We nemen binnen 24 uur contact met je op.</p>
+                        </div>
+                    `;
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                alert('Er ging iets mis. Probeer het opnieuw of neem contact op via hallo@pvo.be');
+            });
+        });
+    </script>
+</body>
+</html>
