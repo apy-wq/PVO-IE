@@ -1991,6 +1991,29 @@
     </footer>
 
     <script>
+        // Pass Google Ads gclid/gbraid/wbraid and UTM params to external links
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var passthrough = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+            var extra = {};
+
+            passthrough.forEach(function(key) {
+                if (params.has(key)) {
+                    extra[key] = params.get(key);
+                }
+            });
+
+            if (Object.keys(extra).length > 0) {
+                document.querySelectorAll('a[href*="amelior.be/nl/inschrijven"]').forEach(function(link) {
+                    var url = new URL(link.href);
+                    Object.keys(extra).forEach(function(key) {
+                        url.searchParams.set(key, extra[key]);
+                    });
+                    link.href = url.toString();
+                });
+            }
+        })();
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
